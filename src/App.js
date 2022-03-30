@@ -1,6 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
+import './App.css';
 
-export default function App() {
+function App() {
   return (
     <div>
       <h1>Bookkeeper</h1>
@@ -17,3 +18,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;

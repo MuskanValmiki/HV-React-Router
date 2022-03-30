@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { getInvoice } from "../data";
 
-export default function Invoice() {
+function Invoice() {
     let params = useParams();
     let invoice = getInvoice(parseInt(params.invoiceId, 10));
     return (
@@ -15,3 +15,4 @@ export default function Invoice() {
     );
   }
   
+export default Invoice;
